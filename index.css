@@ -24,6 +24,13 @@ body{
 	background-color: white;
 }
 
+.burger:hover{
+	background-color: #cccccc;
+	/* width: 26px; */
+	/* height: 26px; */
+	border-radius: 999em;
+}
+
 .burgerLineOne, .burgerLineTwo, .burgerLineThree{
 	/* 大小 */
 	width: calc(var(--lineWidth) * 1px);
@@ -135,5 +142,7 @@ body{
 	color: #000000;
 }
 
-
-/* 目前高度80px; */
+.search:focus{
+	border: 1.5px solid red;
+	outline:none;
+}
