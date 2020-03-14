@@ -112,8 +112,8 @@ body{
 .arrow{
 	/* 位置 */
 	position: absolute;
-	left: 10px;
-	top: 58px;
+	left: 13px;
+	top: 54px;
 	/* 文字 */
 	font-size: 32px;
 }
@@ -124,12 +124,12 @@ body{
 	left: 14%;
 	top: calc(var(--navHeight) * 1px + 10px);
 	/* 外觀 */
-	border: 2px solid #cccccc;
+	border: 1.5px solid #0040ff;
 	/* 大小 */
 	width: 83%;
-	height: 50px;
+	height: 40px;
 	/* 文字 */
-	font-size: 12px;
+	font-size: 18px;
 	/* 顏色 */
 	background-color: #eeeeee;
 	color: #000000;
