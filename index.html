@@ -6,117 +6,190 @@
 	<title>購物網站</title>
 	
 	<style>
-		body{
-      /* 顏色 */
-      background-color: #f9f9f9;
-    }
-		
-	html, body {
-		padding: 0;
-		margin: 0;
-	}
+		html, body {
+	padding: 0;
+	margin: 0;
+}
 
-    .h-36{
-      /* 大小 */
-      height: 36px;
-    }
+body{
+	/* 顏色 */
+	background-color: #f9f9f9;
+}
 
-    :root{
-      --burgerbg: 46;
-      --lineheight: 3;
-      --lineleft: 8;
-      --linewidth: 30;
-    }
+.h-36{
+	/* 大小 */
+	height: 36px;
+}
 
-    .burger{
-      /* 位置 */
-      position: absolute;
-      /* 大小 */
-      width: calc(var(--burgerbg) * 1px);
-      height: 36px;
-      /* 顏色 */
-      background-color: white;
-    }
+:root{
+	--burgerbg: 46;
+	--lineheight: 3;
+	--lineleft: 8;
+	--linewidth: 30;
+}
 
-    .burgerLineOne{
-      /* 位置 */
-      position: absolute;
-      left: calc(var(--lineleft) * 1px);
-      top: 10px;
-      /* 大小 */
-      width: calc(var(--linewidth) * 1px);
-      height: calc(var(--lineheight) * 1px);
-      /* 顏色 */
-      background-color: #606060;
-    }
+.burger{
+	/* 位置 */
+	position: absolute;
+	/* 大小 */
+	width: calc(var(--burgerbg) * 1px);
+	height: 36px;
+	/* 顏色 */
+	background-color: white;
+}
 
-    .burgerLineTwo{
-      /* 大小 */
-      width: calc(var(--linewidth) * 1px);
-      height: calc(var(--lineheight) * 1px);
-      /* 顏色 */
-      background-color: #606060;
-      /* 位置 */
-      position: absolute;
-      left: calc(var(--lineleft) * 1px);
-      top: 14px;
-      margin-top: 2px;
-    }
+.burgerLineOne{
+	/* 位置 */
+	position: absolute;
+	left: calc(var(--lineleft) * 1px);
+	top: 10px;
+	/* 大小 */
+	width: calc(var(--linewidth) * 1px);
+	height: calc(var(--lineheight) * 1px);
+	/* 顏色 */
+	background-color: #606060;
+}
 
-    .burgerLineThree{
-      /* 大小 */
-      width: calc(var(--linewidth) * 1px);
-      height: calc(var(--lineheight) * 1px);
-      /* 顏色 */
-      background-color: #606060;
-      /* 位置 */
-      position: absolute;
-      left: calc(var(--lineleft) * 1px);
-      top: 20px;
-      margin-top: 2px;
-    }
+.burgerLineTwo{
+	/* 大小 */
+	width: calc(var(--linewidth) * 1px);
+	height: calc(var(--lineheight) * 1px);
+	/* 顏色 */
+	background-color: #606060;
+	/* 位置 */
+	position: absolute;
+	left: calc(var(--lineleft) * 1px);
+	top: 14px;
+	margin-top: 2px;
+}
 
-    .namePicture{
-      /* 位置 */
-      position: absolute;
-      right: 0px;
-      /* 大小 */
-      width: 36px;
-      height: 36px;
-      /* 顏色 */
-      /* background-color: #b9b9c8; */
-    }
+.burgerLineThree{
+	/* 大小 */
+	width: calc(var(--linewidth) * 1px);
+	height: calc(var(--lineheight) * 1px);
+	/* 顏色 */
+	background-color: #606060;
+	/* 位置 */
+	position: absolute;
+	left: calc(var(--lineleft) * 1px);
+	top: 20px;
+	margin-top: 2px;
+}
 
-    .circle{
-      /* 位置 */
-      position: absolute;
-      right: 6px;
-      top: 6px;
-      /* 顏色 */
-      background-color: #ad48bf;
-      color: #f7eff8;
-      /* 大小 */
-      width: 24px;
-      height: 24px;
-      /* 文字 */
-      text-align: center;
-      border-radius: 999em;
-    }
+.namePicture{
+	/* 位置 */
+	position: absolute;
+	right: 0px;
+	/* 大小 */
+	width: 36px;
+	height: 36px;
+	/* 顏色 */
+	/* background-color: #b9b9c8; */
+}
 
-    .search{
-      /* 位置 */
-      position: absolute;
-      right: 40px;
-      top: 8px;
-      /* 外觀 */
-      border: 1px solid #cccccc;
-      /* 大小 */
-      width: 250px;
-    }
-	
-     .bg-ye{
+.circle{
+	/* 位置 */
+	position: absolute;
+	right: 6px;
+	top: 6px;
+	/* 顏色 */
+	background-color: #ad48bf;
+	color: #f7eff8;
+	/* 大小 */
+	width: 24px;
+	height: 24px;
+	/* 文字 */
+	text-align: center;
+	border-radius: 999em;
+}
+
+.textPosition{
+	position: relative;
+	top: 2px;
+	right: -1px;
+}
+
+.search{
+	/* 位置 */
+	position: absolute;
+	right: 40px;
+	top: 8px;
+	/* 外觀 */
+	border: 1px solid #cccccc;
+	/* 大小 */
+	width: 250px;
+	height: 20px;
+}
+
+
+
+.fixed-left{
+	/* 位置 */
+	position: absolute;
+	top:36px;
+	/* 大小 */
+	width: 36px;
+	height: 600px;
+	/* 顏色 */
+	background-color: white;
+}
+
+.leftOne{
+	/* 大小 */
+	width: 36px;
+	height: 42px;
+	/* 顏色 */
+	background-color: #dbdbea;
+}
+
+.home{
+	/* 顏色 */
+	color: red;
+	/* 位置 */
+	position: relative;
+	top: 6px;
+	text-align: center;
+	/* 文字 */
+	font-size: 14px;
+}
+
+.leftTwo{
+	/* 大小 */
+	width: 36px;
+	height: 42px;
+	/* 顏色 */
+	background-color: #dbdbea;
+}
+
+.hotProduct{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 14px;
+	color: black;
+}
+
+.logo{
+	/* 顏色 */
+	background-color: red;
+	color: black;
+	/* 文字 */
+	text-align: center;
+	font-size: 12px;
+	/* 位置 */
+	position: relative;
+	left: 10px;
+	/* 大小 */
+	width: 30px;
+	height: 21px;
+}
+
+.bg-ye{
 	background-color: yellow;
-     }
+}
+
+
+
+
 	</style>
 </head>
 <body>
