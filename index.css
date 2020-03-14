@@ -113,7 +113,7 @@ body{
 	/* 位置 */
 	position: absolute;
 	left: 10px;
-	top: 50px;
+	top: 58px;
 	/* 文字 */
 	font-size: 32px;
 }
@@ -127,7 +127,7 @@ body{
 	border: 2px solid #cccccc;
 	/* 大小 */
 	width: 83%;
-	height: 30px;
+	height: 50px;
 	/* 文字 */
 	font-size: 12px;
 	/* 顏色 */
