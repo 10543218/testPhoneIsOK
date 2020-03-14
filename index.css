@@ -1,3 +1,5 @@
+/* ---------- 導覽列開始 ---------- */
+
 html, body {
 	padding: 0;
 	margin: 0;
@@ -13,14 +15,6 @@ body{
 	height: 50px;
 }
 
-:root{
-	--burgerBgWidth: 50;
-	--navHeight: 50;
-	--lineHeight: 2;
-	--lineLeft: 12;
-	--lineWidth: 26;
-	--lineTop: 20;
-}
 
 .burger{
 	/* 大小 */
@@ -30,46 +24,35 @@ body{
 	background-color: white;
 }
 
-.burgerLineOne{	
+.burgerLineOne, .burgerLineTwo, .burgerLineThree{
 	/* 大小 */
 	width: calc(var(--lineWidth) * 1px);
-	height: calc(var(--lineHeight) * 1px);
+	height: calc(var(--lineHeight) * 1px);	
 	/* 顏色 */
-	background-color: #606060;
+	background-color: black;
+	/* 外觀 */
+	border-radius: 10px;
+}
+
+.burgerLineOne{	
 	/* 位置 */
 	position: absolute;
 	left: calc(var(--lineLeft) * 1px);
 	top: calc(var(--lineTop) * 1px);
-	/* 外觀 */
-	border-radius: 10px;
 }
 
 .burgerLineTwo{
-	/* 大小 */
-	width: calc(var(--lineWidth) * 1px);
-	height: calc(var(--lineHeight) * 1px);
-	/* 顏色 */
-	background-color: #606060;
 	/* 位置 */
 	position: absolute;
 	left: calc(var(--lineLeft) * 1px);
 	top: 25px;
-	/* 外觀 */
-	border-radius: 10px;
 }
 
 .burgerLineThree{
-	/* 大小 */
-	width: calc(var(--lineWidth) * 1px);
-	height: calc(var(--lineHeight) * 1px);
-	/* 顏色 */
-	background-color: #606060;
 	/* 位置 */
 	position: absolute;
 	left: calc(var(--lineLeft) * 1px);
 	top: 30px;
-	/* 外觀 */
-	border-radius: 10px;
 }
 
 .namePicture{
@@ -102,89 +85,55 @@ body{
 	border-radius: 999em;
 }
 
-.textPosition{
+.LTextPosition{
 	position: relative;
 	top: 2px;
-	right: -1px;
+	right: 0px;
+}
+
+
+/* ---------- 導覽列結束 ---------- */
+
+
+
+
+/* ---------- 搜尋開始 ---------- */
+
+:root{
+	--burgerBgWidth: 50;
+	--navHeight: 50;
+	--lineHeight: 2;
+	--lineLeft: 12;
+	--lineWidth: 26;
+	--lineTop: 20;
+	/* calc(var(--lineLeft) * 1px); */
+}
+
+.arrow{
+	/* 位置 */
+	position: absolute;
+	left: 10px;
+	top: 50px;
+	/* 文字 */
+	font-size: 32px;
 }
 
 .search{
 	/* 位置 */
 	position: absolute;
-	right: 40px;
-	top: 8px;
+	left: 14%;
+	top: calc(var(--navHeight) * 1px + 10px);
 	/* 外觀 */
-	border: 1px solid #cccccc;
+	border: 2px solid #cccccc;
 	/* 大小 */
-	width: 250px;
-	height: 20px;
-}
-
-
-
-.fixed-left{
-	/* 位置 */
-	position: absolute;
-	top:36px;
-	/* 大小 */
-	width: 36px;
-	height: 600px;
-	/* 顏色 */
-	background-color: white;
-}
-
-.leftOne{
-	/* 大小 */
-	width: 36px;
-	height: 42px;
-	/* 顏色 */
-	background-color: #dbdbea;
-}
-
-.home{
-	/* 顏色 */
-	color: red;
-	/* 位置 */
-	position: relative;
-	top: 6px;
-	text-align: center;
+	width: 83%;
+	height: 30px;
 	/* 文字 */
-	font-size: 14px;
-}
-
-.leftTwo{
-	/* 大小 */
-	width: 36px;
-	height: 42px;
-	/* 顏色 */
-	background-color: #dbdbea;
-}
-
-.hotProduct{
-	text-align: center;
-	margin-top: 20px;
-	font-size: 14px;
-	color: black;
-}
-
-.logo{
-	/* 顏色 */
-	background-color: red;
-	color: black;
-	/* 文字 */
-	text-align: center;
 	font-size: 12px;
-	/* 位置 */
-	position: relative;
-	left: 10px;
-	/* 大小 */
-	width: 30px;
-	height: 21px;
-}
-
-.bg-ye{
-	background-color: yellow;
+	/* 顏色 */
+	background-color: #eeeeee;
+	color: #000000;
 }
 
 
-
+/* 目前高度80px; */
