@@ -16,75 +16,80 @@ body{
 	background-color: #f9f9f9;
 }
 
-.h-36{
+.h-50{
 	/* 大小 */
-	height: 36px;
+	height: 50px;
 }
 
 :root{
-	--burgerbg: 46;
-	--lineheight: 3;
-	--lineleft: 8;
-	--linewidth: 30;
+	--burgerBgWidth: 50;
+	--navHeight: 50;
+	--lineHeight: 2;
+	--lineLeft: 10;
+	--lineWidth: 30;
+	--lineTop: 20;
 }
 
 .burger{
-	/* 位置 */
-	position: absolute;
 	/* 大小 */
-	width: calc(var(--burgerbg) * 1px);
-	height: 36px;
+	width: calc(var(--burgerBgWidth) * 1px);
+	height: calc(var(--navHeight) * 1px);
 	/* 顏色 */
 	background-color: white;
 }
 
-.burgerLineOne{
-	/* 位置 */
-	position: absolute;
-	left: calc(var(--lineleft) * 1px);
-	top: 10px;
+.burgerLineOne{	
 	/* 大小 */
-	width: calc(var(--linewidth) * 1px);
-	height: calc(var(--lineheight) * 1px);
+	width: calc(var(--lineWidth) * 1px);
+	height: calc(var(--lineHeight) * 1px);
 	/* 顏色 */
 	background-color: #606060;
+	/* 位置 */
+	position: absolute;
+	left: calc(var(--lineLeft) * 1px);
+	top: calc(var(--lineTop) * 1px);
+	/* 外觀 */
+	border-radius: 10px;
 }
 
 .burgerLineTwo{
 	/* 大小 */
-	width: calc(var(--linewidth) * 1px);
-	height: calc(var(--lineheight) * 1px);
+	width: calc(var(--lineWidth) * 1px);
+	height: calc(var(--lineHeight) * 1px);
 	/* 顏色 */
 	background-color: #606060;
 	/* 位置 */
 	position: absolute;
-	left: calc(var(--lineleft) * 1px);
-	top: 14px;
-	margin-top: 2px;
+	left: calc(var(--lineLeft) * 1px);
+	top: 25px;
+	/* 外觀 */
+	border-radius: 10px;
 }
 
 .burgerLineThree{
 	/* 大小 */
-	width: calc(var(--linewidth) * 1px);
-	height: calc(var(--lineheight) * 1px);
+	width: calc(var(--lineWidth) * 1px);
+	height: calc(var(--lineHeight) * 1px);
 	/* 顏色 */
 	background-color: #606060;
 	/* 位置 */
 	position: absolute;
-	left: calc(var(--lineleft) * 1px);
-	top: 20px;
-	margin-top: 2px;
+	left: calc(var(--lineLeft) * 1px);
+	top: 30px;
+	/* 外觀 */
+	border-radius: 10px;
 }
 
 .namePicture{
 	/* 位置 */
 	position: absolute;
 	right: 0px;
+	top: 0px;
 	/* 大小 */
-	width: 36px;
-	height: 36px;
+	width: calc(var(--navHeight) * 1px);
+	height: calc(var(--navHeight) * 1px);
 	/* 顏色 */
-	/* background-color: #b9b9c8; */
+	background-color: #b9b9c8;
 }
 
 .circle{
@@ -186,6 +191,10 @@ body{
 .bg-ye{
 	background-color: yellow;
 }
+
+
+
+
 
 
 
