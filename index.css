@@ -13,15 +13,22 @@ body{
 .h-50{
 	/* 大小 */
 	height: 50px;
+	/* 顏色 */
+	background-color: #dddddd;
 }
 
+.bg-yellow{
+	background-color: #fbbc05;
+}
 
 .burger{
 	/* 大小 */
 	width: calc(var(--burgerBgWidth) * 1px);
 	height: calc(var(--navHeight) * 1px);
 	/* 顏色 */
-	background-color: white;
+	background-color: #dddddd;
+	/* 外觀 */
+	/* border-right: 0.15px solid gray; */
 }
 
 .burger:hover{
@@ -62,6 +69,37 @@ body{
 	top: 30px;
 }
 
+
+
+.logo{
+	/* 顏色 */
+	/* background-color: red; */
+	color: black;
+	/* 文字 */
+	text-align: center;
+	font-size: 26px;
+	/* 位置 */
+	position: absolute;
+	top: 8px;
+	left: calc(50% - (var(--burgerBgWidth)* 1px));
+}
+
+.text-blue{
+	color: #4285f4;
+}
+
+.text-red{
+	color: #ea4335;
+}
+
+.text-yellow{
+	color: #fbbc05;
+}
+
+.text-green{
+	color: #34a853;
+}
+
 .namePicture{
 	/* 位置 */
 	position: absolute;
@@ -71,7 +109,7 @@ body{
 	width: calc(var(--navHeight) * 1px);
 	height: calc(var(--navHeight) * 1px);
 	/* 顏色 */
-	background-color: #b9b9c8;
+	background	-color: #b9b9c8;
 	/* 文字 */
 	font-family: MS Sans Serif;
 }
@@ -99,22 +137,9 @@ body{
 }
 
 
-/* ---------- 導覽列結束 ---------- */
-
-
 
 
 /* ---------- 搜尋開始 ---------- */
-
-:root{
-	--burgerBgWidth: 50;
-	--navHeight: 50;
-	--lineHeight: 2;
-	--lineLeft: 12;
-	--lineWidth: 26;
-	--lineTop: 20;
-	/* calc(var(--lineLeft) * 1px); */
-}
 
 .arrow{
 	/* 位置 */
@@ -146,3 +171,92 @@ body{
 	border: 1.5px solid red;
 	outline:none;
 }
+
+.navBelow{
+	visibility: hidden;
+}
+
+.bgMask{
+	/* 位置 */
+	position: absolute;
+	top: calc(var(--navHeight) * 1px);
+	left: calc(100% - var(--bgMaskRightWidth));
+	/* 大小 */
+	height: calc(100% - (var(--navHeight)*1px));
+	width: calc(var(--bgMaskRightWidth));
+	/* 顏色 */
+	background-color: black;
+	opacity: 0.7;
+}
+
+.fixed-left{
+	/* 位置 */
+	position: absolute;
+	top: calc(var(--navHeight) * 1px);
+	/* 大小 */
+	width: calc(100% - (var(--bgMaskRightWidth)));
+	height: calc(100% - (var(--navHeight)*1px));
+	/* 顏色 */
+	background-color: white;
+	opacity: 1;
+}
+
+
+
+
+
+
+:root{
+	--burgerBgWidth: 50;
+	--navHeight: 50;
+	--lineHeight: 2;
+	--lineLeft: 12;
+	--lineWidth: 26;
+	--lineTop: 20;
+	--bgMaskRightWidth: 25%;
+	/* calc(var(--lineLeft) * 1px); */
+}
+
+
+
+
+
+.leftOneRectangle{
+	position: absolute;
+	top: calc(var(--navHeight) * 1px);
+	/* 大小 */
+	width: 50px;
+	height: 50px;
+	/* 顏色 */
+	background-color: #dbdbea;
+}
+
+.home{
+	/* 顏色 */
+	color: red;
+	/* 位置 */
+	position: relative;
+	top: 6px;
+	text-align: center;
+	/* 文字 */
+	font-size: 14px;
+}
+
+.leftTwo{
+	/* 大小 */
+	width: 36px;
+	height: 42px;
+	/* 顏色 */
+	background-color: #dbdbea;
+}
+
+.hotProduct{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 14px;
+	color: black;
+}
+
+
+
+
