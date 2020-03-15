@@ -27,15 +27,6 @@ body{
 	height: calc(var(--navHeight) * 1px);
 	/* 顏色 */
 	background-color: #dddddd;
-	/* 外觀 */
-	/* border-right: 0.15px solid gray; */
-}
-
-.burger:hover{
-	background-color: #cccccc;
-	/* width: 26px; */
-	/* height: 26px; */
-	border-radius: 999em;
 }
 
 .burgerLineOne, .burgerLineTwo, .burgerLineThree{
@@ -221,7 +212,41 @@ body{
 
 
 
+.leftOneRectangle{
+	position: absolute;
+	top: calc(var(--navHeight) * 1px);
+	/* 大小 */
+	width: 50px;
+	height: 50px;
+	/* 顏色 */
+	background-color: #dbdbea;
+}
 
+.home{
+	/* 顏色 */
+	color: red;
+	/* 位置 */
+	position: relative;
+	top: 6px;
+	text-align: center;
+	/* 文字 */
+	font-size: 14px;
+}
+
+.leftTwo{
+	/* 大小 */
+	width: 36px;
+	height: 42px;
+	/* 顏色 */
+	background-color: #dbdbea;
+}
+
+.hotProduct{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 14px;
+	color: black;
+}
 
 
 
