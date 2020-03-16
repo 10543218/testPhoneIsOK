@@ -70,6 +70,7 @@ body{
 	/* 文字 */
 	text-align: center;
 	font-size: 26px;
+	font-family: bold;
 	/* 位置 */
 	position: absolute;
 	top: 8px;
@@ -278,7 +279,7 @@ body{
 	--menuItemsHeight: 50;
 	/* 圖片輪播 */
 	--pictureHeight: 300;
-	--pictureWidth: 50%;
+	--pictureWidth: 70%;
 	/* calc(var(--lineLeft) * 1px); */
 }
 
@@ -287,7 +288,7 @@ body{
 	/* 位置 */
 	position: relative;
 	top: 90px;
-	left: 25%;
+	left: 15%;
 	/* 顏色 */
 	background-color: #cccccc;
 	/* 大小 */
