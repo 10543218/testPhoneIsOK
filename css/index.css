@@ -277,7 +277,7 @@ body{
 	--bgMaskRightWidth: 25%;
 	--menuItemsHeight: 50;
 	/* 圖片輪播 */
-	--pictureHeight: 400;
+	--pictureHeight: 300;
 	--pictureWidth: 50%;
 	/* calc(var(--lineLeft) * 1px); */
 }
