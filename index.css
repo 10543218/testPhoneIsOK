@@ -132,11 +132,12 @@ body{
 
 /* ---------- 搜尋開始 ---------- */
 
+
 .arrow{
 	/* 位置 */
 	position: absolute;
 	left: 11px;
-	top: 54px;
+	top: calc(var(--navHeight) * 1px + 5px);
 	/* 文字 */
 	font-size: 32px;
 }
@@ -165,6 +166,7 @@ body{
 
 .navBelow{
 	visibility: hidden;
+	/* visibility: visible; */
 }
 
 .bgMask{
@@ -205,47 +207,72 @@ body{
 	--lineWidth: 26;
 	--lineTop: 20;
 	--bgMaskRightWidth: 25%;
+	--menuItemsHeight: 50;
 	/* calc(var(--lineLeft) * 1px); */
 }
 
-
-
-
-
-.leftOneRectangle{
-	position: absolute;
-	top: calc(var(--navHeight) * 1px);
-	/* 大小 */
-	width: 50px;
-	height: 50px;
-	/* 顏色 */
-	background-color: #dbdbea;
-}
-
-.home{
+.MenuFontSameAttributes{
 	/* 顏色 */
 	color: red;
-	/* 位置 */
-	position: relative;
-	top: 6px;
-	text-align: center;
 	/* 文字 */
 	font-size: 14px;
+	/* 位置 */
+	position: relative;
+	top: 25%;
+	left: 20%;
 }
 
-.leftTwo{
+.LeftRectangleSameAttributes{
 	/* 大小 */
-	width: 36px;
-	height: 42px;
+	width: 100%;
+	height: 50px;
 	/* 顏色 */
-	background-color: #dbdbea;
+	/* background-color: #dbdbea; */
+	/* 外觀 */
+	border-bottom: 1px solid #4f94ff	;
 }
 
-.hotProduct{
-	text-align: center;
-	margin-top: 20px;
-	font-size: 14px;
-	color: black;
+.leftOneRectangle{
+	/* 位置 */
+	position: absolute;
+	top: calc((var(--menuItemsHeight)*0) * 1px);
+}
+
+
+.leftTwoRectangle{
+	/* 位置 */
+	position: absolute;
+	top: calc((var(--menuItemsHeight)*1) * 1px);
+}
+
+.leftThreeRectangle{
+	/* 位置 */
+	position: absolute;
+	top: calc((var(--menuItemsHeight)*2) * 1px);
+}
+
+.leftFourRectangle{
+	/* 位置 */
+	position: absolute;
+	top: calc((var(--menuItemsHeight)*3) * 1px);
+}
+
+.leftFiveRectangle{
+	/* 位置 */
+	position: absolute;
+	top: calc((var(--menuItemsHeight)*4) * 1px);
+}
+
+.leftSixRectangle{
+	/* 位置 */
+	position: absolute;
+	top: calc((var(--menuItemsHeight)*5) * 1px);
+}
+
+.leftSevenRectangle{
+	/* 位置 */
+	position: absolute;
+	top: calc((var(--menuItemsHeight)*6) * 1px);
 }
 
 
