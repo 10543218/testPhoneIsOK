@@ -1,0 +1,330 @@
+/* ---------- 導覽列開始 ---------- */
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	/* 顏色 */
+	background-color: #f9f9f9;
+	/* background-color: black; */
+}
+
+.h-50{
+	/* 大小 */
+	height: 50px;
+	/* 顏色 */
+	background-color: #dddddd;
+}
+
+.bg-yellow{
+	background-color: #fbbc05;
+}
+
+.burger{
+	/* 大小 */
+	width: calc(var(--burgerBgWidth) * 1px);
+	height: calc(var(--navHeight) * 1px);
+	/* 顏色 */
+	background-color: #dddddd;
+}
+
+.burgerLineOne, .burgerLineTwo, .burgerLineThree{
+	/* 大小 */
+	width: calc(var(--lineWidth) * 1px);
+	height: calc(var(--lineHeight) * 1px);	
+	/* 顏色 */
+	background-color: black;
+	/* 外觀 */
+	border-radius: 10px;
+}
+
+.burgerLineOne{	
+	/* 位置 */
+	position: absolute;
+	left: calc(var(--lineLeft) * 1px);
+	top: calc(var(--lineTop) * 1px);
+}
+
+.burgerLineTwo{
+	/* 位置 */
+	position: absolute;
+	left: calc(var(--lineLeft) * 1px);
+	top: 25px;
+}
+
+.burgerLineThree{
+	/* 位置 */
+	position: absolute;
+	left: calc(var(--lineLeft) * 1px);
+	top: 30px;
+}
+
+
+
+.logo{
+	/* 顏色 */
+	/* background-color: red; */
+	color: black;
+	/* 文字 */
+	text-align: center;
+	font-size: 26px;
+	/* 位置 */
+	position: absolute;
+	top: 8px;
+	left: calc(50% - (var(--burgerBgWidth)* 1px));
+}
+
+.text-blue{
+	color: #4285f4;
+}
+
+.text-red{
+	color: #ea4335;
+}
+
+.text-yellow{
+	color: #fbbc05;
+}
+
+.text-green{
+	color: #34a853;
+}
+
+.namePicture{
+	/* 位置 */
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	/* 大小 */
+	width: calc(var(--navHeight) * 1px);
+	height: calc(var(--navHeight) * 1px);
+	/* 顏色 */
+	background	-color: #b9b9c8;
+	/* 文字 */
+	font-family: MS Sans Serif;
+}
+
+.circle{
+	/* 位置 */
+	position: absolute;
+	right: 13px;
+	top: 13px;
+	/* 顏色 */
+	background-color: #ad48bf;
+	color: #f7eff8;
+	/* 大小 */
+	width: 24px;
+	height: 24px;
+	/* 文字 */
+	text-align: center;
+	border-radius: 999em;
+}
+
+.LTextPosition{
+	position: relative;
+	top: 2px;
+	right: 0px;
+}
+
+
+
+
+/* ---------- 搜尋開始 ---------- */
+
+
+.arrow{
+	/* 位置 */
+	position: absolute;
+	left: 11px;
+	top: calc(var(--navHeight) * 1px + 5px);
+	/* 文字 */
+	font-size: 32px;
+}
+
+.search{
+	/* 位置 */
+	position: absolute;
+	left: 14%;
+	top: calc(var(--navHeight) * 1px + 10px);
+	/* 外觀 */
+	border: 1.5px solid #0040ff;
+	/* 大小 */
+	width: 83%;
+	height: 40px;
+	/* 文字 */
+	font-size: 18px;
+	/* 顏色 */
+	background-color: #eeeeee;
+	color: #000000;
+}
+
+.search:focus{
+	border: 1.5px solid red;
+	outline:none;
+}
+
+.navBelow{
+	visibility: hidden;
+	/* visibility: visible; */
+}
+
+.bgMask{
+	/* 位置 */
+	position: absolute;
+	top: calc(var(--navHeight) * 1px);
+	left: calc(100% - var(--bgMaskRightWidth));
+	/* 大小 */
+	height: calc(100% - (var(--navHeight)*1px));
+	width: calc(var(--bgMaskRightWidth));
+	/* 顏色 */
+	background-color: black;
+	opacity: 0.7;
+}
+
+.fixed-left{
+	/* 位置 */
+	position: absolute;
+	top: calc(var(--navHeight) * 1px);
+	/* 大小 */
+	width: calc(100% - (var(--bgMaskRightWidth)));
+	height: calc(100% - (var(--navHeight)*1px));
+	/* 顏色 */
+	background-color: white;
+	opacity: 1;
+}
+
+
+.MenuFontSameAttributes{
+	/* 顏色 */
+	color: red;
+	/* 文字 */
+	font-size: 14px;
+	/* 位置 */
+	position: relative;
+	top: 35%;
+	left: 20%;
+}
+
+.LeftRectangleSameAttributes{
+	/* 大小 */
+	width: 100%;
+	height: 50px;
+	/* 顏色 */
+	/* background-color: #dbdbea; */
+	/* 外觀 */
+	border-bottom: 1px solid #4f94ff	;
+}
+
+.leftOneRectangle{
+	/* 位置 */
+	position: absolute;
+	top: calc((var(--menuItemsHeight)*0) * 1px);
+}
+
+
+.leftTwoRectangle{
+	/* 位置 */
+	position: absolute;
+	top: calc((var(--menuItemsHeight)*1) * 1px);
+}
+
+.leftThreeRectangle{
+	/* 位置 */
+	position: absolute;
+	top: calc((var(--menuItemsHeight)*2) * 1px);
+}
+
+.leftFourRectangle{
+	/* 位置 */
+	position: absolute;
+	top: calc((var(--menuItemsHeight)*3) * 1px);
+}
+
+.leftFiveRectangle{
+	/* 位置 */
+	position: absolute;
+	top: calc((var(--menuItemsHeight)*4) * 1px);
+}
+
+.leftSixRectangle{
+	/* 位置 */
+	position: absolute;
+	top: calc((var(--menuItemsHeight)*5) * 1px);
+}
+
+.leftSevenRectangle{
+	/* 位置 */
+	position: absolute;
+	top: calc((var(--menuItemsHeight)*6) * 1px);
+}
+
+
+
+/* 圖片輪播開始 */
+
+
+:root{
+	/* 導航列 */
+	--burgerBgWidth: 50;
+	--navHeight: 50;
+	--lineHeight: 2;
+	--lineLeft: 12;
+	--lineWidth: 26;
+	--lineTop: 20;
+	/* 遮罩背景 */
+	--bgMaskRightWidth: 25%;
+	--menuItemsHeight: 50;
+	/* 圖片輪播 */
+	--pictureHeight: 400;
+	--pictureWidth: 50%;
+	/* calc(var(--lineLeft) * 1px); */
+}
+
+
+.picturePosition{
+	/* 位置 */
+	position: relative;
+	top: 90px;
+	left: 25%;
+	/* 顏色 */
+	background-color: #cccccc;
+	/* 大小 */
+	width: calc(var(--pictureWidth) * 1);
+	height: calc(var(--pictureHeight) * 1px);
+}
+
+.carousel-inner img {
+	/* 大小 */
+	width: 100%;
+	height: calc(var(--pictureHeight) * 1px);
+}
+
+.carousel-control-prev , .carousel-control-next{
+	width: 60%;
+}
+ 
+.container{
+	text-align:center
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
