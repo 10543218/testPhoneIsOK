@@ -95,7 +95,10 @@
 			
 		<!-- 圖片輪播結束 -->
 		
-	
+		<!-- 網頁最下面開始 -->
+		<div class="pageBotton">Copyright © 2020 小智小組</div>
+		<!-- 網頁最下面結束 -->
+		
 		
 		<!-- 左側固定開始 -->
 		<div class="navBelow" id="navBelow">
@@ -141,15 +144,27 @@
 		<!-- 左側固定結束 -->
 		
 		
-		<div class="pageBotton">2020版權所有@copyright小智隊</div>
+
+		<!-- 音樂開始 -->
+		<audio id="audio" autoplay="autoplay" loop>
+			<source src="music/Gone.mp3" type="audio/ogg"/>
+			<source src="music/TheTruthThatYouLeave.mp3" type="audio/mpeg"/>
+			Your browser does not support the audio element.
+		</audio>
 		
+		<div class="queryPlayBg" id="queryPlayBg">
+			<div class="queryPlayText">您是否要撥放音樂?</div>
+			<input class="startMusicYes queryStyle" type="button" onclick="play()" value="好呀!">
+			<input class="startMusicNo queryStyle" type="button" onclick="noPlay()" value="不要!">
+		</div>
+		<!-- 音樂結束 -->
+		
+		
+		
+		
+
 		<!-- <div style="width:812px;background-color:red;text-align:center;" >812px;</div> -->
-		<!-- <div style="width:645px;background-color:gray;text-align:center;" >645px;</div> -->
-		<!-- <div style="width:530px;background-color:#adc9f6;text-align:center;" >530px;</div> -->
-		<!-- <div style="width:440px;background-color:#93ff26;text-align:center;" >440px;</div> -->
 		<!-- <div style="width:350px;background-color:pink;text-align:center;" >350px;</div> -->
-		<!-- <div style="width:360px;background-color:pink;text-align:center;position:absolute;top:170px;" >360/170px;</div> -->
-		<!-- <div style="width:320px;background-color:pink;text-align:center;position:absolute;top:200px;" >320/200px;</div> -->
     </header>
 
 </body>
