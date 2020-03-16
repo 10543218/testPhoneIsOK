@@ -5,15 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>購物網站</title>
 
-	<link rel="stylesheet" type="text/css" href="index.css"/>
-
-	<script src="index.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<link rel="stylesheet" type="text/css" href="css/at.css"/>
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/index.js"></script>
+	
+	<style>
+		
+	</style>
 </head>
 <body>
 	<header>
 		<!-- 導覽列開始 -->
         <div class="h-50">
-			<div class="burger" id="burger" onclick="ShowMenu()">
+			<div class="burger" id="burger" onclick="ShowMenu()" >
 				<div class="burgerLineOne"></div>
 				<div class="burgerLineTwo"></div>
 				<div class="burgerLineThree"></div>
@@ -39,11 +48,54 @@
 		<!-- 導覽列結束 -->
 		
 		<!-- 搜尋那一排開始 -->
+		<div>
 			<div class="arrow">←</div>
 			<input class="search" id="search" type="search" placeholder="&nbsp輸入尋找商品">
+		</div>
 		<!-- 搜尋那一排結束 -->
 		
 		
+		
+		
+		
+		
+		
+		<!-- 圖片輪播開始 -->
+			
+			
+		<div id="myCarousel" class="carousel slide picturePosition" data-ride="carousel">
+            <!-- 連結導引項目 -->
+            <ul class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ul>
+            <!--圖片顯示區, 幻燈片圖片 -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/test.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/css.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/magnifier.png" />
+                </div>
+            </div>
+            <!-- 前後切換連結-->
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <span class="carousel-control-prev-icon text-green"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                <span class="carousel-control-next-icon text-green"></span>
+            </a>
+        </div>	
+			
+
+			
+		<!-- 圖片輪播結束 -->
+		
+	
 		
 		<!-- 左側固定開始 -->
 		<div class="navBelow" id="navBelow">
@@ -88,16 +140,6 @@
 		</div>	
 		<!-- 左側固定結束 -->
 		
-		
-		
-		<!-- 圖片輪播開始 -->
-			
-		<!-- 圖片輪播結束 -->
-		
-	
-		
-		
-		
 		<!-- <div style="width:812px;background-color:red;text-align:center;" >812px;</div> -->
 		<!-- <div style="width:645px;background-color:gray;text-align:center;" >645px;</div> -->
 		<!-- <div style="width:530px;background-color:#adc9f6;text-align:center;" >530px;</div> -->
@@ -110,3 +152,28 @@
 </body>
 </html>
 
+<!-- 巡覽列結束 -->
+<!-- 49 : href="#swContent"  ==>  連結到id為swContent的區塊 -->
+<!-- 43 : text-white  ==>  白色文字  (2-15) -->
+<!-- 43 : nav-link  ==>  (8-17) -->
+<!-- 42 : active  ==>  啟用  (10-10) -->
+<!-- 42 : nav-item  ==>  (8-17)  -->
+<!-- 41 : justify-content-end  ==>  對齊右端點樣式，但感覺在此根本沒作用 (7-10) -->
+<!-- 41 : mr-auto  ==>  右邊填滿  (6-17) -->
+<!-- 41 : navbar-nav  ==>  不打這行，內容會全部都以垂直呈現出來  (8-17) -->
+<!-- 40 : id="navbarSupportedContent"  ==>  導覽列id  (8-21) -->
+<!-- 40 : navbar-collapse  ==>  不打這行，內容不會顯示出來  (8-21)  -->
+<!-- 40 : collapse  ==>  預設隱藏摺疊元件的內容  (10-11) -->
+<!-- 38 : navbar-toggler-icon  ==>  漢堡選單圖示  (8-21) -->
+<!-- 37 : aria-label="Toggle navigation"  ==>  (找不到，要研究研究) -->
+<!-- 36 : aria-expanded="false"  ==>  表示展開狀態，false值表示將元素設為未展開。  (10-13) -->
+<!-- 35 : aria-controls="navbarSupportedContent"  ==>  表示按鈕元素和多個摺疊區塊的關係，並使用id識別名稱互相對應。  (10-13) -->
+<!-- 34 : data-target="#navbarSupportedContent"  ==>  id為"navbarSupportedContent"的就是內容  (8-21) -->
+<!-- 33 : data-toggle="collapse"  ==>  漢堡選單按鈕  (8-21) -->
+<!-- 32 : navbar-toggler  ==>  選單按鈕框框樣式  (8-21) -->
+<!-- 29 : navbar-brand  ==>  生成圖片樣式  (8-19) -->
+<!-- 27 : fixed-top  ==>  永遠固定在上  (11-7) -->
+<!-- 27 : navbar-dark  ==>  白色字體  (8-19) -->
+<!-- 27 : navbar-expand-lg  ==>  大型螢幕用時為水平樣式  (8-17) -->
+<!-- 27 : navbar  ==>  預設垂直導覽列樣式  (8-17) -->
+<!-- 巡覽列開始 -->
