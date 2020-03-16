@@ -12,3 +12,26 @@ let ShowMenu = () => {
 	burgerIsClick = !burgerIsClick;
 }
 
+
+
+// 撥放音樂+音量控制
+let play = () => {
+	audio = document.getElementById("audio");
+	audio.play();
+	audio.volume = 0.5;
+	
+	const queryPlayBg = document.getElementById("queryPlayBg");
+	queryPlayBg.style.visibility = "hidden";
+	
+	const myCarousel = document.getElementById("myCarousel");
+	myCarousel.style.visibility = "visible";
+}
+
+let noPlay = () => {
+	const queryPlayBg = document.getElementById("queryPlayBg");
+	queryPlayBg.style.visibility = "hidden"; 
+	
+	const myCarousel = document.getElementById("myCarousel");
+	myCarousel.style.visibility = "visible";
+}
+
