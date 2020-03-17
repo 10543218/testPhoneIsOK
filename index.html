@@ -2,7 +2,10 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+	<meta name="screen-orientation" content="portrait">
+	<meta name="x5-orientation" content="portrait">
+	
 	<title>購物網站</title>
 
 	<link href="css/bootstrap.min.css" rel="stylesheet"/>
@@ -57,9 +60,6 @@
 		
 		
 		
-		
-		
-		
 		<!-- 圖片輪播開始 -->
 			
 			
@@ -83,10 +83,10 @@
                 </div>
             </div>
             <!-- 前後切換連結-->
-            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev" id="prev">
                 <span class="carousel-control-prev-icon text-green"></span>
             </a>
-            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <a class="carousel-control-next" href="#myCarousel" data-slide="next" id="Next">
                 <span class="carousel-control-next-icon text-green"></span>
             </a>
         </div>	
@@ -96,7 +96,7 @@
 		<!-- 圖片輪播結束 -->
 		
 		<!-- 網頁最下面開始 -->
-		<div class="pageBotton">Copyright © 2020 小智小組</div>
+		<div class="pageBotton">Copyright © 2020 超車手小組</div>
 		<!-- 網頁最下面結束 -->
 		
 		
@@ -104,41 +104,50 @@
 		<div class="navBelow" id="navBelow">
 			<div class="fixed-left">
 				<div class="leftOneRectangle LeftRectangleSameAttributes">
+					<div class="menuCircle"></div>
 					<div class="MenuFontSameAttributes">
 						首頁&nbsp (Home) 				
 					</div>
 				</div>
 				<div class="leftTwoRectangle LeftRectangleSameAttributes">
+					<div class="menuCircle"></div>
 					<div class="MenuFontSameAttributes">
 						發燒商品&nbsp (Hot) 				
 					</div>
 				</div>
 				<div class="leftThreeRectangle LeftRectangleSameAttributes">
+					<div class="menuCircle"></div>
 					<div class="MenuFontSameAttributes">
 						關於我們&nbsp (AboutMe) 				
 					</div>
 				</div>
 				<div class="leftFourRectangle LeftRectangleSameAttributes">
+					<div class="menuCircle"></div>
 					<div class="MenuFontSameAttributes">
 						購物車&nbsp (Shopping Cart)				
 					</div>
 				</div>
 				<div class="leftFiveRectangle LeftRectangleSameAttributes">
+					<div class="menuCircle"></div>
 					<div class="MenuFontSameAttributes">
 						我的最愛&nbsp (My Favourite)				
 					</div>
 				</div>
 				<div class="leftSixRectangle LeftRectangleSameAttributes">
+					<div class="menuCircle"></div>
 					<div class="MenuFontSameAttributes">
 						登入&nbsp (Login)			
 					</div>
 				</div>
 				<div class="leftSevenRectangle LeftRectangleSameAttributes">
+					<div class="menuCircle"></div>
 					<div class="MenuFontSameAttributes">
 						註冊&nbsp (Registered)				
 					</div>
 				</div>
 			</div>
+			<input class="stopOrPlay" type="button" onclick="stopOrPlay()" value="尚未播放" id="stopOrPlay">
+			<input class="changeSoundNumber" type="range" min="0" max="1" step="0.05" value="0.5" onchange="changeSoundNumber()" id="changeSoundNumber">
 			<div class="bgMask"></div>
 		</div>	
 		<!-- 左側固定結束 -->
@@ -146,6 +155,7 @@
 		
 
 		<!-- 音樂開始 -->
+		
 		<audio id="audio" autoplay="autoplay" loop>
 			<source src="music/Gone.mp3" type="audio/ogg"/>
 			<source src="music/TheTruthThatYouLeave.mp3" type="audio/mpeg"/>
@@ -157,9 +167,11 @@
 			<input class="startMusicYes queryStyle" type="button" onclick="play()" value="好呀!">
 			<input class="startMusicNo queryStyle" type="button" onclick="noPlay()" value="不要!">
 		</div>
+		
+		
 		<!-- 音樂結束 -->
 		
-		
+				
 		
 		
 
