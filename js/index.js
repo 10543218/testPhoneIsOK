@@ -13,8 +13,17 @@ let ShowMenu = () => {
 	
 	const prev = document.getElementById("prev");
 	const Next = document.getElementById("Next");
+	const carouselIndicators = document.getElementById("carouselIndicators");
+	const carouselDashOne = document.getElementById("carouselDashOne");
+	const carouselDashTwo = document.getElementById("carouselDashTwo");
+	const carouselDashThree = document.getElementById("carouselDashThree");
+	
 	prev.style.visibility = menuIsOpen ? "hidden" : "visible";
 	Next.style.visibility = menuIsOpen ? "hidden" : "visible";
+	carouselIndicators.style.visibility = menuIsOpen ? "hidden" : "visible";
+	carouselDashOne.style.visibility = menuIsOpen ? "hidden" : "visible";
+	carouselDashTwo.style.visibility = menuIsOpen ? "hidden" : "visible";
+	carouselDashThree.style.visibility = menuIsOpen ? "hidden" : "visible";
 }
 
 
@@ -64,20 +73,31 @@ let stopOrPlay = () => {
 
 // 手動調整音樂大小
 let changeSoundNumber = () => {
-	const changeSoundNumber= document.getElementById("changeSoundNumber");
+	const changeSoundNumber = document.getElementById("changeSoundNumber");
 	const audio = document.getElementById("audio");
 	audio.volume = changeSoundNumber.value;
 }
 
 
+// 關閉左側 menu
+let closeMenu = () => {
+	const burger = document.getElementById("burger");
+	burger.click();
+}
 
 
 
+// 打開註冊畫面
+let showRegisteredPage = () => {
+	const registeredPage = document.getElementById("registeredPage");
+	registeredPage.style.visibility = "visible";
+}
 
-
-
-
-
+let closeRegisteredPage = () => {
+	const registeredPage = document.getElementById("registeredPage");
+	registeredPage.style.visibility = "hidden";
+	alert("已註冊完畢");
+}
 
 
 
