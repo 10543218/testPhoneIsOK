@@ -542,11 +542,12 @@ body{
 	top: calc(var(--textInitY) + (var(--textGap) * 1));
 }
 
-/* .accountInput{ */
+.accountInput{
 	/* 位置 */
 	position: absolute;
 	top: calc(var(--inputInitY) + (var(--textGap) * 1));
 }
+
 
 .passwordText{
 	/* 位置 */
