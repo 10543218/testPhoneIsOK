@@ -96,7 +96,6 @@ let showRegisteredPage = () => {
 let closeRegisteredPage = () => {
 	const registeredPage = document.getElementById("registeredPage");
 	registeredPage.style.visibility = "hidden";
-	alert("已註冊完畢");
 }
 
 
