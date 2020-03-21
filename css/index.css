@@ -407,7 +407,7 @@ body{
 .registeredPage{
 	/* 位置 */
 	position: absolute;
-	top: 0px;
+	top: -5px;
 	left: 0px;
 	/* 大小 */
 	width: 100%;
@@ -416,17 +416,17 @@ body{
 	background-color: black;
 	color: white;
 	/* 外觀 */
-	visibility: hidden;
+	visibility: visible;
 }
 
 .returnPreviousPage{
 	/* 位置 */
-	position: absolute;
-	top: 5%;
-	left: 8%;
+	position: relative;
+	top: 20px;
+	left: 20px;
 	/* 大小 */
-	width: 15%;
-	height: 8%;
+	width: 60px;
+	height: 60px;
 	/* 外觀 */
 	border: 2px solid white;
 	outline: none;
@@ -442,7 +442,7 @@ body{
 .returnPreviousPageArrow{
 	/* 位置 */
 	position: relative;
-	top: -14%;
+	top: -5px;
 	left: 20%;
 }
 
@@ -455,17 +455,16 @@ body{
 .welcomeRegistered{
 	/* 位置 */
 	position: absolute;
-	top: 6%;
+	top: 30px;
 	left: 35%;
 	/* 文字 */
 	font-size: 26px;
 }
 
-
 .inputStyle{
 	/* 大小 */
 	width: 68%;
-	height: 8%;
+	height: 20px;
 	/* 顏色 */
 	background-color: black;
 	color: white;
@@ -516,9 +515,10 @@ body{
 	--circleTop: 45%;
 	--circleGap: 80%;
 	/* 登入畫面 */
-	--textGap: 14.5%;
-	--textInitY: 19.5%;
-	--inputInitY: 18%;
+	--textInitY: 92;
+	--inputInitY: 88;
+	--inputGap: 68;
+	--textGap: 68;
 	/* calc(var(--lineLeft) * 1px); */
 }
 
@@ -526,66 +526,69 @@ body{
 .nameText{
 	/* 位置 */
 	position: absolute;
-	top: calc(var(--textInitY) + (var(--textGap) * 0));
+	top: calc( (var(--textInitY) + (var(--textGap)*0)) * 1px);
 }
 
 .nameInput{
 	/* 位置 */
 	position: absolute;
-	top: calc(var(--inputInitY) + (var(--textGap) * 0));	
+	top: calc( (var(--inputInitY) + (var(--inputGap)*0)) * 1px);
 }
 
 
 .accountText{
 	/* 位置 */
 	position: absolute;
-	top: calc(var(--textInitY) + (var(--textGap) * 1));
+	top: calc( (var(--textInitY) + (var(--textGap)*1)) * 1px);
 }
 
 .accountInput{
 	/* 位置 */
 	position: absolute;
-	top: calc(var(--inputInitY) + (var(--textGap) * 1));
+	top: calc( (var(--inputInitY) + (var(--inputGap)*1)) * 1px);
 }
 
 
 .passwordText{
 	/* 位置 */
 	position: absolute;
-	top: calc(var(--textInitY) + (var(--textGap) * 2));
+	top: calc( (var(--textInitY) + (var(--textGap)*2)) * 1px);
 }
 
 .passwordInput{
 	/* 位置 */
 	position: absolute;
-	top: calc(var(--inputInitY) + (var(--textGap) * 2));
+	top: calc( (var(--inputInitY) + (var(--inputGap)*2)) * 1px);
 }
 
 
 .mailText{
 	/* 位置 */
 	position: absolute;
-	top: calc(var(--textInitY) + (var(--textGap) * 3));
+	top: calc( (var(--textInitY) + (var(--textGap)*3)) * 1px);
 }
 
 .mailInput{
 	/* 位置 */
 	position: absolute;
-	top: calc(var(--inputInitY) + (var(--textGap) * 3));
+	top: calc( (var(--inputInitY) + (var(--inputGap)*3)) * 1px);
 }
 
 
 .phoneText{
 	/* 位置 */
 	position: absolute;
-	top: calc(var(--textInitY) + (var(--textGap) * 4));
+	top: calc( (var(--textInitY) + (var(--textGap)*4)) * 1px);
 }
 
 .phoneInput{
 	/* 位置 */
 	position: absolute;
-	top: calc(var(--inputInitY) + (var(--textGap) * 4));
+	top: calc( (var(--inputInitY) + (var(--inputGap)*4)) * 1px);
 }
+
+
+
 
 
 .confirmRegistered{
