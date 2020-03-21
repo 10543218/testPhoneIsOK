@@ -89,8 +89,7 @@ let closeMenu = () => {
 
 // 打開註冊畫面
 let showRegisteredPage = () => {
-	const registeredPage = document.getElementById("registeredPage");
-	registeredPage.style.visibility = "visible";
+	window.location.href="register.html";
 }
 
 let closeRegisteredPage = () => {
