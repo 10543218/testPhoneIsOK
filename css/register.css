@@ -72,9 +72,13 @@ body{
 
 .returnPreviousPageArrow{
 	/* 位置 */
-	position: relative;
-	top: 0px;
-	left: 3px;
+	/* position: relative; */
+	/* top: 0px; */
+	/* left: 3px; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
 }
 
 .returnPreviousPageArrow:hover{
