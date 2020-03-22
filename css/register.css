@@ -13,7 +13,7 @@ body{
 	top: 0px;
 	left: 0px;
 	/* 大小 */
-	height: 10%;
+	height: 60px;
 	width: 100%;
 	/* 顏色 */
 	background-color: #3b5998;
@@ -109,7 +109,7 @@ body{
 	border: 2px solid #3b5998;
 	/* 位置 */
 	position: relative;
-	top: 20px;
+	top: 50px;
 	margin-bottom: 30px;
 	
 }
@@ -130,7 +130,7 @@ body{
 	font-family:monospace;
 	/* 位置 */
 	position: relative;
-	top: 30px;
+	top: 50px;
 }
 
 .button:hover{
