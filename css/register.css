@@ -109,7 +109,7 @@ body{
 	border: 2px solid #3b5998;
 	/* 位置 */
 	position: relative;
-	top: 50px;
+	top: 30px;
 	margin-bottom: 30px;
 	
 }
@@ -130,7 +130,7 @@ body{
 	font-family:monospace;
 	/* 位置 */
 	position: relative;
-	top: 50px;
+	top: 40px;
 }
 
 .button:hover{
