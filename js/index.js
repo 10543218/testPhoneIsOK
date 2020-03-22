@@ -92,6 +92,11 @@ let showRegisteredPage = () => {
 	window.location.href="register.html";
 }
 
+// 打開登入頁面
+let showLoginPage = () => {
+	window.location.href="login.html";
+}
+
 let closeRegisteredPage = () => {
 	const registeredPage = document.getElementById("registeredPage");
 	registeredPage.style.visibility = "hidden";
