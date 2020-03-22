@@ -19,6 +19,24 @@ body{
 	background-color: #3b5998;
 }
 
+.welcomeRegistered{
+	/* 位置 */
+	position: absolute;
+	top: 10px;
+	/* left: 62%; */
+	/* 文字 */
+	font-size: 30px;
+	text-align: center;
+	/* 顏色 */
+	color: white;
+	/* background-color:red; */
+}
+
+.alignCenter{
+	display: flex;
+	justify-content: center;
+}
+
 .centerBlock{
 	/* 位置 */
 	position: absolute;
@@ -34,25 +52,6 @@ body{
 	justify-content: center;
 }
 
-.welcomeRegistered{
-	/* 位置 */
-	position: absolute;
-	top: 13px;
-	/* left: 62%; */
-	/* 文字 */
-	font-size: 30px;
-	text-align: center;
-	/* 顏色 */
-	color: white;
-	/* background-color:red; */
-}
-
-.alignCenter{
-	display: flex;
-	justify-content: center;
-}
-
-
 
 .returnPreviousPage{
 	/* 位置 */
@@ -65,8 +64,6 @@ body{
 	/* 外觀 */	
 	border: 2px solid white;
 	outline: none;
-	/* 文字 */
-	font-size: 24px;
 	/* 顏色 */
 	color: white;
 }
@@ -78,12 +75,13 @@ body{
 
 .returnPreviousPageArrow{
 	/* 位置 */
-	/* position: relative; */
-	/* top: 0px; */
-	/* left: 3px; */
+	position: relative;
+	top: -5px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	/* align-items: end; */
+	/* 文字 */
+	font-size: 26px;
 	
 }
 
