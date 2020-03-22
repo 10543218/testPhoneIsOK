@@ -25,7 +25,6 @@ body{
 	top: 13%;
 	left: 12%;
 	/* 大小 */
-	/* height: 80%; */
 	width: 76%;
 	/* 顏色 */
 	/* background-color: #36d900; */
@@ -38,15 +37,22 @@ body{
 .welcomeRegistered{
 	/* 位置 */
 	position: absolute;
-	top: 15px;
-	left: 42%;
+	top: 13px;
+	/* left: 62%; */
 	/* 文字 */
-	font-size: 28px;
+	font-size: 30px;
 	text-align: center;
 	/* 顏色 */
 	color: white;
 	/* background-color:red; */
 }
+
+.alignCenter{
+	display: flex;
+	justify-content: center;
+}
+
+
 
 .returnPreviousPage{
 	/* 位置 */
@@ -86,6 +92,8 @@ body{
 	color: red;
 }
 
+
+
 .inputStyle{
 	/* 大小 */
 	width: 80%;
@@ -96,7 +104,7 @@ body{
 	/* 文字 */
 	text-align: center;
 	padding: 8px;
-	font-size: 12px;
+	font-size: 16px;
 	/* 外觀 */
 	outline: 0px;
 	border-radius: 30px;	
