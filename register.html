@@ -8,9 +8,12 @@
 	
 	<title>註冊</title>
 	<link rel="stylesheet" type="text/css" href="css/register.css"/>
-	<style>
-		
-	</style>
+	
+	<script>
+		const goPrevPage = () => {
+			history.back();
+		}
+	</script>
 </head>
 <body>
 	<header>
@@ -19,11 +22,6 @@
 		
 			
 			<div class="topBlock">
-				<div class="returnPreviousPage" onclick="">
-					<div class="returnPreviousPageArrow">
-							←
-					</div>
-				</div>
 				<div class="alignCenter">
 					<div class="welcomeRegistered">註冊</div>
 				</div>
@@ -35,12 +33,11 @@
 				<input class="inputStyle" type="text" placeholder="再次輸入密碼">
 				<input class="inputStyle" type="text" placeholder="輸入信箱">
 				<input class="button" type="button" value="點擊註冊">
-				
+				<input class="button" type="button" value="回上頁" onclick="goPrevPage()">
 			</div>
 			
-		
 			
-			
+
 			
 		<!-- 註冊畫面結束 -->
 		
