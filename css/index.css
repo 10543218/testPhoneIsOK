@@ -7,7 +7,7 @@ html, body {
 
 body{
 	/* 顏色 */
-	background-color: #f9f9f9;
+	background-color: #e9ebee;
 	/* background-color: black; */
 }
 
@@ -15,7 +15,7 @@ body{
 	/* 大小 */
 	height: 50px;
 	/* 顏色 */
-	background-color: #dddddd;
+	background-color: #4267b2;
 }
 
 .bg-yellow{
@@ -27,7 +27,7 @@ body{
 	width: calc(var(--burgerBgWidth) * 1px);
 	height: calc(var(--navHeight) * 1px);
 	/* 顏色 */
-	background-color: #dddddd;
+	background-color: #4267b2;
 }
 
 .burgerLineOne, .burgerLineTwo, .burgerLineThree{
@@ -35,7 +35,7 @@ body{
 	width: calc(var(--lineWidth) * 1px);
 	height: calc(var(--lineHeight) * 1px);	
 	/* 顏色 */
-	background-color: black;
+	background-color: white;
 	/* 外觀 */
 	border-radius: 10px;
 }
@@ -69,7 +69,7 @@ body{
 	color: black;
 	/* 文字 */
 	text-align: center;
-	font-size: 32px;
+	font-size: 30px;
 	font-weight: bold;
 	/* 位置 */
 	position: absolute;
@@ -93,6 +93,10 @@ body{
 	color: #34a853;
 }
 
+.text-white{
+	
+}
+
 .namePicture{
 	/* 位置 */
 	position: absolute;
@@ -102,7 +106,7 @@ body{
 	width: calc(var(--navHeight) * 1px);
 	height: calc(var(--navHeight) * 1px);
 	/* 顏色 */
-	background	-color: #b9b9c8;
+	background-color: #4267b2;
 	/* 文字 */
 	font-family: MS Sans Serif;
 }
@@ -113,8 +117,8 @@ body{
 	right: 13px;
 	top: 13px;
 	/* 顏色 */
-	background-color: #ad48bf;
-	color: #f7eff8;
+	background-color: white;
+	color: #4267b2;
 	/* 大小 */
 	width: 24px;
 	height: 24px;
@@ -282,13 +286,13 @@ body{
 
 .stopOrPlay{
 	position: absolute;
-	bottom: 2%;
+	top: calc((var(--menuItemsHeight)*8.25) * 1px);
 	left: 10px;
 }
 
 .changeSoundNumber{
 	position: absolute;
-	bottom: 2.5%;
+	top: calc((var(--menuItemsHeight)*8.3) * 1px);
 	left: 100px;
 }
 
@@ -299,9 +303,9 @@ body{
 
 
 
-#myCarousel{
-	visibility: hidden;
-}
+/* #myCarousel{ */
+	/* visibility: visible; */
+/* } */
 
 
 .picturePosition{
@@ -402,99 +406,6 @@ body{
 
 
 
-/* 註冊畫面 */
-
-.registeredPage{
-	/* 位置 */
-	position: absolute;
-	top: 5px;
-	left: 0px;
-	/* 大小 */
-	width: 100%;
-	height: 120%;
-	/* 顏色 */
-	background-color: black;
-	color: white;
-	/* 外觀 */
-	visibility: visible;
-}
-
-.returnPreviousPage{
-	/* 位置 */
-	position: relative;
-	top: 20px;
-	left: 30px;
-	/* 大小 */
-	width: 40px;
-	height: 40px;
-	/* 外觀 */
-	border: 2px solid white;
-	outline: none;
-	/* 文字 */
-	font-size: 36px;
-}
-
-.returnPreviousPage:hover{
-	/* 外觀 */
-	border: 2px solid red;
-}
-
-.returnPreviousPageArrow{
-	/* 位置 */
-	position: relative;
-	top: -13px;
-	left: 0px;
-}
-
-.returnPreviousPageArrow:hover{
-	/* 顏色 */
-	color: red;
-}
-
-
-.welcomeRegistered{
-	/* 位置 */
-	position: absolute;
-	top: 15px;
-	left: 35%;
-	/* 文字 */
-	font-size: 32px;
-}
-
-.inputStyle{
-	/* 大小 */
-	width: 68%;
-	height: 20px;
-	/* 顏色 */
-	background-color: black;
-	color: white;
-	/* 文字 */
-	padding: 20px;
-	font-size: 22px;
-	/* 外觀 */
-	outline: none;
-	border-radius: 30px;	
-	border: 2px solid white;
-	/* 位置 */
-	left: 25%;
-} 
-
-.inputStyle:hover{
-	/* 外觀 */
-	transition: 1.5s;
-	border-radius: 10px;
-	border: 2px solid red;
-}
-
-
-.textStyle{
-	/* 文字 */
-	font-size: 20px;
-	/* 顏色 */
-	color: white;
-	/* 位置 */
-	left: 8%;
-}
 
 
 :root{
@@ -514,96 +425,9 @@ body{
 	/* 圓圈位置 */
 	--circleTop: 45%;
 	--circleGap: 80%;
-	/* 登入畫面 */
-	--textInitY: 92;
-	--inputInitY: 88;
-	--inputGap: 68;
-	--textGap: 68;
 	/* calc(var(--lineLeft) * 1px); */
 }
 
 
-.nameText{
-	/* 位置 */
-	position: absolute;
-	top: calc( (var(--textInitY) + (var(--textGap)*0)) * 1px);
-}
-
-.nameInput{
-	/* 位置 */
-	position: absolute;
-	top: calc( (var(--inputInitY) + (var(--inputGap)*0)) * 1px);
-}
-
-
-.accountText{
-	/* 位置 */
-	position: absolute;
-	top: calc( (var(--textInitY) + (var(--textGap)*1)) * 1px);
-}
-
-.accountInput{
-	/* 位置 */
-	position: absolute;
-	top: calc( (var(--inputInitY) + (var(--inputGap)*1)) * 1px);
-}
-
-
-.passwordText{
-	/* 位置 */
-	position: absolute;
-	top: calc( (var(--textInitY) + (var(--textGap)*2)) * 1px);
-}
-
-.passwordInput{
-	/* 位置 */
-	position: absolute;
-	top: calc( (var(--inputInitY) + (var(--inputGap)*2)) * 1px);
-}
-
-
-.mailText{
-	/* 位置 */
-	position: absolute;
-	top: calc( (var(--textInitY) + (var(--textGap)*3)) * 1px);
-}
-
-.mailInput{
-	/* 位置 */
-	position: absolute;
-	top: calc( (var(--inputInitY) + (var(--inputGap)*3)) * 1px);
-}
-
-
-.phoneText{
-	/* 位置 */
-	position: absolute;
-	top: calc( (var(--textInitY) + (var(--textGap)*4)) * 1px);
-}
-
-.phoneInput{
-	/* 位置 */
-	position: absolute;
-	top: calc( (var(--inputInitY) + (var(--inputGap)*4)) * 1px);
-}
-
-
-.confirmRegistered{
-	/* 顏色 */
-	color: white;
-	background-color: black;
-	/* 外觀 */
-	border: 2px solid white;
-	/* 位置 */
-	position: absolute;
-	top: 440px;
-	left: 35%;
-	/* 大小 */
-	width: 30%;
-	height: 40px;
-	/* 文字 */
-	font-size: 20px;
-	font-weight: bold;
-}
 
 
