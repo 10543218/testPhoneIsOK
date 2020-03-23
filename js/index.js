@@ -7,7 +7,7 @@ let ShowMenu = () => {
 	menuIsOpen = !menuIsOpen;
 	
 	const burger = document.getElementById("burger");
-	burger.style.backgroundColor = burgerIsClick ? "#dddddd" : "#cccccc";
+	burger.style.backgroundColor = burgerIsClick ? "#4267b2" : "#4267b2";
 	burger.style.borderRadius = "999em";
 	burgerIsClick = !burgerIsClick;
 	
@@ -29,35 +29,35 @@ let ShowMenu = () => {
 
 
 // 顧客選擇撥放音樂+音量控制
-let isPlay = false;
-let play = () => {
-	audio = document.getElementById("audio");
-	audio.play();
-	audio.volume = 0.5;
+// let isPlay = false;
+// let play = () => {
+	// audio = document.getElementById("audio");
+	// audio.play();
+	// audio.volume = 0.5;
 	
-	const queryPlayBg = document.getElementById("queryPlayBg");
-	queryPlayBg.style.visibility = "hidden";
+	// const queryPlayBg = document.getElementById("queryPlayBg");
+	// queryPlayBg.style.visibility = "hidden";
 	
-	const myCarousel = document.getElementById("myCarousel");
-	myCarousel.style.visibility = "visible";
+	// const myCarousel = document.getElementById("myCarousel");
+	// myCarousel.style.visibility = "visible";
 	
-	const stopOrPlay = document.getElementById("stopOrPlay");
-	stopOrPlay.value ="播放中";
-	isPlay = true;
+	// const stopOrPlay = document.getElementById("stopOrPlay");
+	// stopOrPlay.value ="播放中";
+	// isPlay = true;
 	
-}
+// }
 
-let noPlay = () => {
-	const queryPlayBg = document.getElementById("queryPlayBg");
-	queryPlayBg.style.visibility = "hidden"; 
+// let noPlay = () => {
+	// const queryPlayBg = document.getElementById("queryPlayBg");
+	// queryPlayBg.style.visibility = "hidden"; 
 	
-	const myCarousel = document.getElementById("myCarousel");
-	myCarousel.style.visibility = "visible";
-}
+	// const myCarousel = document.getElementById("myCarousel");
+	// myCarousel.style.visibility = "visible";
+// }
 
 
 // 手動點選播放音樂
-
+let isPlay = false;    //如果上面打開 這行就要刪掉
 let stopOrPlay = () => {
 	const audio = document.getElementById("audio");
 	if(!isPlay){
